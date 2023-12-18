@@ -479,13 +479,13 @@ h4 {
 /* media query */
 @media (width>= 576px) {
   .navbar {
-    .brand {
+    & .brand {
       width: auto;
     }
   }
   .header {
-    .header-content {
-      .header-content-image {
+   & .header-content {
+    &  .header-content-image {
         width: 50%;
       }
     }
@@ -494,22 +494,22 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
   }
   .contact {
-    .contact-card {
+   & .contact-card {
       flex-direction: row;
       padding: 4rem;
       width: clamp(300px, 90%, 1000px);
       margin: auto;
       margin-bottom: 2.5rem !important;
       border-radius: 16px;
-      .contact-card-info {
+     & .contact-card-info {
         width: 50%;
-        .contact-card-info-contacts {
+       & .contact-card-info-contacts {
           flex-direction: column;
           padding-left: 2rem;
           padding-right: 2rem;
         }
       }
-      .contact-card-links {
+     & .contact-card-links {
         flex-direction: column;
       }
     }
@@ -524,33 +524,33 @@ h4 {
   }
   .navbar {
     padding: 15px 50px;
-    .nav-menu {
+   & .nav-menu {
       display: none;
     }
-    .nav-links {
+   & .nav-links {
       flex-direction: row;
       padding: 0;
       transform: translateY(0);
       box-shadow: none;
       background: none;
       position: static;
-      .close-menu {
+     & .close-menu {
         display: none;
       }
     }
   }
   .header {
-    .header-content {
+   & .header-content {
       align-items: flex-start;
-      .header-content-text {
+     & .header-content-text {
         .text-hello {
           font-size: 24px;
         }
-        .text-job {
+       & .text-job {
           font-size: 48px;
         }
       }
-      .header-content-image {
+     & .header-content-image {
         width: 70%;
         position: static;
         transform: translate(0, 0);
@@ -560,23 +560,23 @@ h4 {
   }
   .about-me {
     grid-template-columns: repeat(3, 1fr);
-    .about-me-content {
+   & .about-me-content {
       grid-column: span 2;
-      .about-me-image {
+     & .about-me-image {
         position: static;
         transform: translate(0, 0);
         opacity: 1;
         width: 50%;
       }
-      .about-me-text {
+     & .about-me-text {
         width: 50%;
       }
     }
   }
   .contact {
-    .contact-card {
-      .contact-card-info {
-        .contact-card-info-contacts {
+   & .contact-card {
+     & .contact-card-info {
+       & .contact-card-info-contacts {
           padding-left: 4rem;
           padding-right: 4rem;
         }
@@ -597,9 +597,9 @@ h4 {
     padding: 10px 32px;
   }
   .header {
-    .header-content {
+   & .header-content {
       align-items: center;
-      .header-content-text {
+     & .header-content-text {
         gap: 1.5rem;
       }
     }
