@@ -81,13 +81,13 @@ h4 {
   color: white;
   position: relative;
   z-index: 1000;
-  .brand {
+  & .brand {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
   }
-  .nav-links {
+  & .nav-links {
     display: flex;
     gap: 2rem;
     font-size: 18px;
@@ -108,13 +108,13 @@ h4 {
     &.slide {
       transform: translateY(0px);
     }
-    .close-menu {
+    & .close-menu {
       position: absolute;
       top: 20px;
       right: 24px;
       font-size: 24px;
     }
-    .link {
+    & .link {
       position: relative;
       padding: 0.25rem;
       &::after {
@@ -148,33 +148,33 @@ h4 {
   display: flex;
   flex-direction: column;
   position: relative;
-  .header-content {
+  & .header-content {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    .header-content-text {
+    & .header-content-text {
       width: 100%;
       color: white;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
 
-      .text-what-i-do {
+      & .text-what-i-do {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        .text-hello {
+        & .text-hello {
           font-size: 18px;
           font-family: "Poppins-Medium", sans-serif;
         }
-        .text-job {
+        & .text-job {
           font-family: "Poppins-SemiBold", sans-serif;
           font-size: 30px;
         }
       }
     }
-    .header-content-image {
+    & .header-content-image {
       width: 70%;
       position: absolute;
       opacity: 0.35;
